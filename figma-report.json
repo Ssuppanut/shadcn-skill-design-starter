@@ -1,0 +1,2601 @@
+{
+  "fileKey": "EMGolA3PL92mos3EmmJSlt",
+  "file": "@shadcn_ui components",
+  "nodes": [
+    {
+      "id": "308-14",
+      "name": "Accordion / Prototype Components",
+      "type": "FRAME",
+      "colors": [
+        {
+          "hex": "#0a0a0a",
+          "rgba": "rgb(10, 10, 10)",
+          "count": 38,
+          "token": null,
+          "delta": null,
+          "exact": null,
+          "semantic": null
+        },
+        {
+          "hex": "#e5e5e5",
+          "rgba": "rgb(229, 229, 229)",
+          "count": 10,
+          "token": null,
+          "delta": null,
+          "exact": null,
+          "semantic": null
+        },
+        {
+          "hex": "#ffffff",
+          "rgba": "rgb(255, 255, 255)",
+          "count": 1,
+          "token": null,
+          "delta": null,
+          "exact": null,
+          "semantic": null
+        },
+        {
+          "hex": "#7c3aed",
+          "rgba": "rgb(124, 58, 237)",
+          "count": 1,
+          "token": null,
+          "delta": null,
+          "exact": null,
+          "semantic": null
+        },
+        {
+          "hex": "#737373",
+          "rgba": "rgb(115, 115, 115)",
+          "count": 1,
+          "token": null,
+          "delta": null,
+          "exact": null,
+          "semantic": null
+        }
+      ],
+      "bindings": [
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:9",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:245",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:294",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "paddingLeft",
+          "variableId": "VariableID:ae4c1299660a514d2fff67a366d384160aea3158/253:456",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "paddingTop",
+          "variableId": "VariableID:ae4c1299660a514d2fff67a366d384160aea3158/253:456",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:ae4c1299660a514d2fff67a366d384160aea3158/253:456",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "paddingBottom",
+          "variableId": "VariableID:ae4c1299660a514d2fff67a366d384160aea3158/253:456",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "fills",
+          "variableId": "VariableID:3047:9",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion / Prototype Components",
+          "nodeType": "FRAME",
+          "property": "strokes",
+          "variableId": "VariableID:3047:245",
+          "variableName": null
+        },
+        {
+          "nodeName": "Section",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:264",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:212",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:199",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:186",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:21",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:21",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:208",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Subtitle",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:181",
+          "variableName": null
+        },
+        {
+          "nodeName": "Header",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:265",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:212",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:199",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:186",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:276",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Wrapper",
+          "nodeType": "COMPONENT_SET",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Hover",
+          "nodeType": "COMPONENT",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Hover",
+          "nodeType": "COMPONENT",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Hover",
+          "nodeType": "COMPONENT",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Hover",
+          "nodeType": "COMPONENT",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Line 1",
+          "nodeType": "LINE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Line 1",
+          "nodeType": "LINE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Header",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:265",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:212",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:199",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:186",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:276",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1301",
+          "variableName": null
+        },
+        {
+          "nodeName": "Accordion",
+          "nodeType": "COMPONENT_SET",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:250",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Default",
+          "nodeType": "COMPONENT",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#1",
+          "nodeType": "COMPONENT",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:250",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#1",
+          "nodeType": "COMPONENT",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#1",
+          "nodeType": "COMPONENT",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#1",
+          "nodeType": "COMPONENT",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#1",
+          "nodeType": "COMPONENT",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:276",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1400",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1302",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#2",
+          "nodeType": "COMPONENT",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:250",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#2",
+          "nodeType": "COMPONENT",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#2",
+          "nodeType": "COMPONENT",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#2",
+          "nodeType": "COMPONENT",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#2",
+          "nodeType": "COMPONENT",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "FRAME",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:276",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1400",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1302",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#3",
+          "nodeType": "COMPONENT",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:250",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#3",
+          "nodeType": "COMPONENT",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#3",
+          "nodeType": "COMPONENT",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#3",
+          "nodeType": "COMPONENT",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "State=Question#3",
+          "nodeType": "COMPONENT",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1432",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "strokes",
+          "variableId": "VariableID:3047:25",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingTop",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Button",
+          "nodeType": "INSTANCE",
+          "property": "paddingBottom",
+          "variableId": "VariableID:6810747973d4b0204c1549fc71f2389de842e3d0/249:438",
+          "variableName": null
+        },
+        {
+          "nodeName": "Question",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:bd7c8a1b496563928188c465e9d7850400625cb6/263:7",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:197",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Title",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokeWeight",
+          "variableId": "VariableID:3050:80",
+          "variableName": null
+        },
+        {
+          "nodeName": "Vector",
+          "nodeType": "VECTOR",
+          "property": "strokes",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "itemSpacing",
+          "variableId": "VariableID:3048:276",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingLeft",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingTop",
+          "variableId": "VariableID:3048:1400",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingRight",
+          "variableId": "VariableID:3048:1402",
+          "variableName": null
+        },
+        {
+          "nodeName": "Answer",
+          "nodeType": "FRAME",
+          "property": "paddingBottom",
+          "variableId": "VariableID:3048:1302",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills.color",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fills",
+          "variableId": "VariableID:3047:11",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "lineHeight",
+          "variableId": "VariableID:3048:207",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "letterSpacing",
+          "variableId": "VariableID:3048:220",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontWeight",
+          "variableId": "VariableID:3048:196",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontFamily",
+          "variableId": "VariableID:3048:176",
+          "variableName": null
+        },
+        {
+          "nodeName": "Description",
+          "nodeType": "TEXT",
+          "property": "fontSize",
+          "variableId": "VariableID:3048:180",
+          "variableName": null
+        }
+      ]
+    }
+  ]
+}
