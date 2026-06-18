@@ -33,6 +33,12 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# storybook
+/storybook-static
+*.storybook.log
+# playwright-cli scratch (snapshots/console captures)
+/.playwright-cli
+
 # vercel
 .vercel
 

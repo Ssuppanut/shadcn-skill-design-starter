@@ -26,6 +26,7 @@ import {
   DropdownMenuDemo,
   EmptyDemo,
   FieldDemo,
+  FormDemo,
   HoverCardDemo,
   InputDemo,
   InputGroupDemo,
@@ -569,6 +570,42 @@ import { Calendar } from "@/components/ui/calendar"
   </Field>
 </FieldGroup>`,
     Demo: FieldDemo,
+  },
+  {
+    slug: "form",
+    name: "Form",
+    description:
+      "Accessible form primitives wiring react-hook-form and Zod validation to labels, controls, and messages.",
+    category: "Forms",
+    status: "stable",
+    install: "pnpm dlx shadcn@latest add form",
+    usage: `import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { z } from "zod"
+import {
+  Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage,
+} from "@/components/ui/form"
+
+const schema = z.object({ username: z.string().min(2) })
+
+const form = useForm({ resolver: zodResolver(schema), defaultValues: { username: "" } })
+
+<Form {...form}>
+  <form onSubmit={form.handleSubmit(onSubmit)}>
+    <FormField
+      control={form.control}
+      name="username"
+      render={({ field }) => (
+        <FormItem>
+          <FormLabel>Username</FormLabel>
+          <FormControl><Input {...field} /></FormControl>
+          <FormMessage />
+        </FormItem>
+      )}
+    />
+  </form>
+</Form>`,
+    Demo: FormDemo,
   },
   {
     slug: "hover-card",

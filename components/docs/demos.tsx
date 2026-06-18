@@ -2,6 +2,9 @@
 
 import * as React from "react";
 import { toast } from "sonner";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import {
   Bell,
   Bold,
@@ -35,6 +38,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -964,6 +976,49 @@ export function EmptyDemo() {
         </Button>
       </EmptyContent>
     </Empty>
+  );
+}
+
+const profileFormSchema = z.object({
+  username: z
+    .string()
+    .min(2, { message: "Username must be at least 2 characters." })
+    .max(32, { message: "Username must be at most 32 characters." }),
+});
+
+export function FormDemo() {
+  const form = useForm<z.infer<typeof profileFormSchema>>({
+    resolver: zodResolver(profileFormSchema),
+    defaultValues: { username: "" },
+  });
+
+  function onSubmit(values: z.infer<typeof profileFormSchema>) {
+    toast.success(`Submitted as @${values.username}`);
+  }
+
+  return (
+    <Form {...form}>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="w-full max-w-sm space-y-6"
+      >
+        <FormField
+          control={form.control}
+          name="username"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input placeholder="shadcn" {...field} />
+              </FormControl>
+              <FormDescription>This is your public display name.</FormDescription>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit">Submit</Button>
+      </form>
+    </Form>
   );
 }
 

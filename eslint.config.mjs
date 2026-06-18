@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Storybook static build output (huge minified bundles).
+    "storybook-static/**",
   ]),
   // shadcn/ui primitives and hooks are generated (re-run `shadcn add` to update,
   // never hand-edit). Relax the React Compiler hook rules that flag upstream
