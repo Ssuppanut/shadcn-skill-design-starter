@@ -1,5 +1,7 @@
 # Create Skill Design
 
+**Live:** 📖 [Documentation](https://ssuppanut.github.io/shadcn-skill-design-starter/) · 📚 [Storybook](https://ssuppanut.github.io/shadcn-skill-design-starter/storybook/)
+
 A **Figma-driven component documentation site** built on Next.js, Tailwind CSS v4, and shadcn/ui — paired with a self-contained kit of **18 design skills** for Claude Code.
 
 Design decisions live in a Figma file and flow through a one-way pipeline into production code:
@@ -31,6 +33,7 @@ The repo ships three things in one:
 - [The design-skill kit](#the-design-skill-kit)
 - [Scripts](#scripts)
 - [Configuration](#configuration)
+- [Deployment](#deployment)
 - [Conventions and guardrails](#conventions-and-guardrails)
 
 ---
@@ -230,6 +233,8 @@ For live values without a re-export, read directly from Figma via the Dev Mode M
 
 ## The docs app
 
+> **Live:** https://ssuppanut.github.io/shadcn-skill-design-starter/
+
 The documentation site lives entirely under the `(docs)` route group and is driven by one file:
 
 - **`components/docs/registry.tsx`** — the single source of truth. Each entry defines a `slug`, `name`, `description`, `category`, `status` (`stable` / `beta` / `new`), an `install` command, a `usage` snippet, and a `Demo` component.
@@ -250,6 +255,8 @@ Per-component pages are statically generated (`generateStaticParams`) with per-p
 ---
 
 ## Storybook (dev/QA workbench)
+
+> **Live:** https://ssuppanut.github.io/shadcn-skill-design-starter/storybook/
 
 Alongside the docs app, the repo ships a **Storybook 10** workbench for the **dev** and **QA** teams — every component in isolation, with live controls, autodocs, accessibility checks, and browser-based component tests.
 
@@ -347,6 +354,29 @@ Path aliases (from `components.json` / `tsconfig.json`):
 @/lib/utils        → lib/utils.ts (cn helper)
 @/hooks/*          → hooks/*
 ```
+
+---
+
+## Deployment
+
+Both sites are published to **GitHub Pages** from a single workflow,
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml), on every push to `main`:
+
+| Surface | URL |
+|---|---|
+| 📖 Documentation | https://ssuppanut.github.io/shadcn-skill-design-starter/ |
+| 📚 Storybook | https://ssuppanut.github.io/shadcn-skill-design-starter/storybook/ |
+
+How it works:
+
+1. `next build` runs with `GITHUB_PAGES=true`, producing a static export in `out/`
+   (the Next config sets `output: "export"` and a `basePath` of `/shadcn-skill-design-starter`).
+2. `build-storybook` produces `storybook-static/`, which is moved to `out/storybook`.
+3. The combined `out/` directory is uploaded and deployed via `actions/deploy-pages`.
+
+> **One-time setup:** in the repo **Settings → Pages**, set **Source = GitHub Actions**.
+> The `basePath` only applies when `GITHUB_PAGES=true`, so local `pnpm dev`,
+> `pnpm build`, and `pnpm storybook` continue to run at the root.
 
 ---
 
