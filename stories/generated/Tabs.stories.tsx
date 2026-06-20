@@ -7,7 +7,9 @@ import { TabsDemo } from "@/components/docs/demos";
 const meta = {
   title: "Navigation/Tabs",
   component: TabsDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof TabsDemo>;
 
 export default meta;

@@ -7,7 +7,9 @@ import { ProgressDemo } from "@/components/docs/demos";
 const meta = {
   title: "Feedback/Progress",
   component: ProgressDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof ProgressDemo>;
 
 export default meta;

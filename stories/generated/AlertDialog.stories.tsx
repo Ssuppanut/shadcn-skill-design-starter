@@ -7,7 +7,9 @@ import { AlertDialogDemo } from "@/components/docs/demos";
 const meta = {
   title: "Overlay/Alert Dialog",
   component: AlertDialogDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof AlertDialogDemo>;
 
 export default meta;

@@ -7,7 +7,9 @@ import { CarouselDemo } from "@/components/docs/demos";
 const meta = {
   title: "Display/Carousel",
   component: CarouselDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof CarouselDemo>;
 
 export default meta;

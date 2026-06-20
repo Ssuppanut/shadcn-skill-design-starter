@@ -7,7 +7,9 @@ import { FormDemo } from "@/components/docs/demos";
 const meta = {
   title: "Forms/Form",
   component: FormDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof FormDemo>;
 
 export default meta;

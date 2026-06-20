@@ -7,7 +7,9 @@ import { SeparatorDemo } from "@/components/docs/demos";
 const meta = {
   title: "Layout/Separator",
   component: SeparatorDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof SeparatorDemo>;
 
 export default meta;

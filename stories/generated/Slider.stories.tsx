@@ -7,7 +7,9 @@ import { SliderDemo } from "@/components/docs/demos";
 const meta = {
   title: "Forms/Slider",
   component: SliderDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof SliderDemo>;
 
 export default meta;

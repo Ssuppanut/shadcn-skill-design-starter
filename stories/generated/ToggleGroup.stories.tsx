@@ -7,7 +7,9 @@ import { ToggleGroupDemo } from "@/components/docs/demos";
 const meta = {
   title: "Buttons/Toggle Group",
   component: ToggleGroupDemo,
-  parameters: { layout: "centered" },
+  // "padded" (not "centered"): many demos use `w-full`, which collapses to 0
+  // width inside Storybook's shrink-wrapped centered layout.
+  parameters: { layout: "padded" },
 } satisfies Meta<typeof ToggleGroupDemo>;
 
 export default meta;
