@@ -19,7 +19,9 @@ const Progress = React.forwardRef<
     value={value}
     max={max}
     className={cn(
-      "relative h-4 w-full overflow-hidden rounded-full bg-secondary",
+      // Height 8px + track = primary@20% to match the Figma source of truth
+      // (was h-4 / bg-secondary from an older shadcn snippet).
+      "relative h-2 w-full overflow-hidden rounded-full bg-primary/20",
       className
     )}
     {...props}
