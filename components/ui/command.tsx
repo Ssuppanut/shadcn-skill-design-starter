@@ -102,6 +102,10 @@ const CommandSeparator = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive.Separator
     ref={ref}
+    // Decorative divider. cmdk renders it with role="separator" as a child of
+    // the list's role="listbox", which ARIA disallows (axe aria-required-children);
+    // hide it from the a11y tree since group headings already convey structure.
+    aria-hidden="true"
     className={cn("-mx-1 h-px bg-border", className)}
     {...props}
   />

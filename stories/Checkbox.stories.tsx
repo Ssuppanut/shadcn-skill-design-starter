@@ -14,6 +14,7 @@ const meta = {
   args: {
     defaultChecked: false,
     disabled: false,
+    "aria-label": "Accept terms",
   },
 } satisfies Meta<typeof Checkbox>;
 

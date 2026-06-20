@@ -10,8 +10,11 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        // text-background (not the undefined `text-destructive-foreground`,
+        // which rendered near-black → WCAG fail): adapts per theme, white on
+        // the light dark-red fill and near-black on the dark light-red fill.
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-background hover:bg-destructive/90",
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:

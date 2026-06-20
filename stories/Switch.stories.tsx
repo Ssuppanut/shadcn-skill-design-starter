@@ -14,6 +14,7 @@ const meta = {
   args: {
     defaultChecked: false,
     disabled: false,
+    "aria-label": "Airplane mode",
   },
 } satisfies Meta<typeof Switch>;
 

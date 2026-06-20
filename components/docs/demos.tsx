@@ -719,6 +719,7 @@ export function ComboboxDemo() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
+          aria-label="Select framework"
           className="w-[240px] justify-between"
         >
           {value
@@ -1085,7 +1086,12 @@ export function InputGroupDemo() {
 export function InputOTPDemo() {
   const [value, setValue] = React.useState("");
   return (
-    <InputOTP maxLength={6} value={value} onChange={setValue}>
+    <InputOTP
+      maxLength={6}
+      value={value}
+      onChange={setValue}
+      aria-label="One-time password"
+    >
       <InputOTPGroup>
         <InputOTPSlot index={0} />
         <InputOTPSlot index={1} />
@@ -1349,7 +1355,7 @@ export function ScrollAreaDemo() {
 export function SelectDemo() {
   return (
     <Select>
-      <SelectTrigger className="w-[220px]">
+      <SelectTrigger className="w-[220px]" aria-label="Select a fruit">
         <SelectValue placeholder="Select a fruit" />
       </SelectTrigger>
       <SelectContent>
@@ -1467,6 +1473,7 @@ export function SliderDemo() {
       defaultValue={[50]}
       max={100}
       step={1}
+      aria-label="Volume"
       className="w-full max-w-sm"
     />
   );
