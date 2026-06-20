@@ -8,10 +8,11 @@ Design decisions live in a Figma file and flow through a one-way pipeline into p
 Figma variables → design/variables-export.json → src/app/globals.css → shadcn/ui → Next.js
 ```
 
-The repo ships two things in one:
+The repo ships three things in one:
 
-1. **A live docs app** that catalogues 55 UI components, each with an install command, a runnable preview, and copy-paste usage code — themed entirely with semantic design tokens, so light/dark mode is automatic.
-2. **A design-system skill kit** under `.claude/skills/` that turns Claude Code into a design-system co-pilot (tokens, accessibility, taste, framework adapters, QA gates, and a 138-system reference library).
+1. **A live docs app** that catalogues 56 UI components, each with an install command, a runnable preview, and copy-paste usage code — themed entirely with semantic design tokens, so light/dark mode is automatic.
+2. **A Storybook workbench** for the dev/QA team — every component in isolation, with live controls, a Light/Dark toolbar, accessibility checks (axe), and browser-based component tests (Vitest + Playwright).
+3. **A design-system skill kit** under `.claude/skills/` that turns Claude Code into a design-system co-pilot (tokens, accessibility, taste, framework adapters, QA gates, and a 138-system reference library).
 
 ---
 
@@ -26,6 +27,7 @@ The repo ships two things in one:
 - [Project structure](#project-structure)
 - [Design token system](#design-token-system)
 - [The docs app](#the-docs-app)
+- [Storybook (dev/QA workbench)](#storybook-devqa-workbench)
 - [The design-skill kit](#the-design-skill-kit)
 - [Scripts](#scripts)
 - [Configuration](#configuration)
@@ -37,9 +39,10 @@ The repo ships two things in one:
 
 - **Token-driven theming.** A single Figma export (`design/variables-export.json`, **1,806 variables**) is compiled into `src/app/globals.css` by `scripts/sync-tokens.mjs`. The 35 `shadcn/ui` semantic tokens are converted from sRGB to **OKLCh** and emitted for both light and dark modes.
 - **Automatic dark mode.** Driven by `.dark` overrides in `globals.css` plus `next-themes` (system default). No `dark:` variants needed for normal usage.
-- **Component catalogue.** 55 documented components across 8 categories, all derived from a single registry (`components/docs/registry.tsx`) — add one entry and the overview grid, sidebar, and dynamic route all update.
+- **Component catalogue.** 56 documented components across 8 categories, all derived from a single registry (`components/docs/registry.tsx`) — add one entry and the overview grid, sidebar, and dynamic route all update.
 - **Per-component pages.** Each component has an installation command (one-click copyable), a live rendered demo, and usage code. Statically generated via `generateStaticParams`.
-- **51 shadcn/ui primitives** pre-installed under `components/ui/`.
+- **52 shadcn/ui primitives** pre-installed under `components/ui/` (including the `react-hook-form` + Zod `Form` layer).
+- **Storybook workbench.** 56 stories (one per component) with a Light/Dark toolbar, controls-rich playgrounds for key primitives, autodocs, axe accessibility checks, and a `@storybook/addon-vitest` runner that executes every story as a real-browser component test for CI/QA.
 - **Design-skill kit.** 18 Claude Code skills + a shared resource layer (`_ux-ui-shared/`) with 14 DTCG token files, 138 named design systems, and 19 validation scripts.
 - **Type-safe and linted.** TypeScript throughout, ESLint via `eslint-config-next`, and a CI-friendly token-count check (`sync:tokens:check`).
 
@@ -59,6 +62,8 @@ The repo ships two things in one:
 | Icons | lucide-react |
 | Theming | next-themes |
 | Fonts | Geist Sans + Geist Mono (`next/font`) |
+| Workbench | Storybook 10 (`@storybook/nextjs-vite`) + addon-a11y + addon-docs |
+| Component tests | Vitest 4 (browser mode) + Playwright (chromium), via `@storybook/addon-vitest` |
 | Design source | Figma variables, exported via the LazyYsync plugin |
 | Package manager | pnpm |
 
@@ -102,6 +107,11 @@ pnpm lint                # run ESLint
 pnpm sync:tokens         # regenerate src/app/globals.css from the Figma export
 pnpm sync:tokens:check   # verify the token count (1,806) without writing — use in CI
 
+pnpm storybook           # start Storybook (dev/QA workbench) at http://localhost:6006
+pnpm build-storybook     # build the static Storybook site
+pnpm test-storybook      # run every story as a browser component test (CI/QA)
+pnpm gen:stories         # regenerate the showcase stories from the docs demos
+
 pnpm dlx shadcn@latest add <component>   # add a new shadcn/ui primitive
 ```
 
@@ -143,7 +153,7 @@ Click any card to open `/components/<slug>`. Each page shows the install command
 pnpm dlx shadcn@latest add <component>     # generates components/ui/<component>.tsx
 ```
 
-Then add a demo in `components/docs/demos.tsx` and append one entry to `components/docs/registry.tsx`. The sidebar, overview grid, and `/components/[slug]` route all derive from that single array — no other wiring needed.
+Then add a demo in `components/docs/demos.tsx` and append one entry to `components/docs/registry.tsx`. The sidebar, overview grid, and `/components/[slug]` route all derive from that single array — no other wiring needed. To pick up the new component in Storybook, run `pnpm gen:stories` (it reads the same registry and writes a showcase story into `stories/generated/`).
 
 **6. Update tokens when the design changes.**
 Re-export the Figma variables (overwrite `design/variables-export.json`), then:
@@ -157,6 +167,7 @@ pnpm sync:tokens
 ```bash
 pnpm sync:tokens:check    # asserts 1,806 variables
 pnpm build && pnpm lint
+pnpm test-storybook       # run all story tests in a headless browser (QA gate)
 ```
 
 ---
@@ -170,7 +181,11 @@ pnpm build && pnpm lint
 ├── design/
 │   └── variables-export.json          # Figma token snapshot (1,806 vars) — source of truth
 ├── scripts/
-│   └── sync-tokens.mjs                # regenerates globals.css from the export (sRGB → OKLCh)
+│   ├── sync-tokens.mjs                # regenerates globals.css from the export (sRGB → OKLCh)
+│   └── gen-stories.mjs                # generates showcase stories from the docs registry
+├── .storybook/                        # Storybook config (main.ts, preview.tsx)
+├── stories/                           # 56 stories: generated/ (49) + 7 rich + Introduction.mdx
+├── vitest.config.ts                   # Vitest browser-mode config for story component tests
 ├── src/
 │   └── app/
 │       ├── globals.css                # AUTO-GENERATED token theme (do not hand-edit)
@@ -180,7 +195,7 @@ pnpm build && pnpm lint
 │           ├── page.tsx               # overview grid (components by category)
 │           └── components/[slug]/page.tsx   # per-component page (install · demo · code)
 ├── components/
-│   ├── ui/                            # 51 shadcn/ui primitives (generated — do not hand-edit)
+│   ├── ui/                            # 52 shadcn/ui primitives (generated — do not hand-edit)
 │   ├── docs/                          # registry.tsx, demos.tsx, component-preview.tsx
 │   ├── layout/                        # docs-sidebar, site-header, mode-toggle
 │   └── theme-provider.tsx
@@ -234,6 +249,34 @@ Per-component pages are statically generated (`generateStaticParams`) with per-p
 
 ---
 
+## Storybook (dev/QA workbench)
+
+Alongside the docs app, the repo ships a **Storybook 10** workbench for the **dev** and **QA** teams — every component in isolation, with live controls, autodocs, accessibility checks, and browser-based component tests.
+
+```bash
+pnpm storybook            # dev server at http://localhost:6006
+pnpm build-storybook      # static build → storybook-static/ (deployable, git-ignored)
+pnpm test-storybook       # run every story as a browser component test
+pnpm test-storybook:watch # the same, in watch mode
+```
+
+**What's inside**
+
+- **56 stories — one per component.** 49 are auto-generated from the same demos that power the docs site (`pnpm gen:stories` → `stories/generated/`); 7 key primitives (Button, Badge, Input, Textarea, Alert, Switch, Checkbox) ship hand-written **Playground** stories with live **Controls**. An `Introduction.mdx` page orients the team.
+- **Grouped by category** in the sidebar (Buttons, Forms, Display, Feedback, Overlay, Navigation, Data, Layout), with a **Light/Dark** toolbar driven by the generated `globals.css` tokens.
+- **Accessibility** — `@storybook/addon-a11y` runs axe on every story (report-only by default; flip `a11y.test` to `"error"` in `.storybook/preview.tsx` to fail tests on violations).
+- **Component tests for QA/CI** — `@storybook/addon-vitest` runs each story as a real-browser test via **Vitest 4** + **Playwright** (chromium). `pnpm test-storybook` is a ready-made QA gate.
+
+**How it fits the stack**
+
+- Framework: `@storybook/nextjs-vite` (Vite builder). Tailwind v4 is processed through the project's existing `@tailwindcss/postcss` config — no separate Storybook styling setup.
+- Stories reuse `components/docs/demos.tsx`, so the docs site and Storybook never drift. Edit a demo, re-run `pnpm gen:stories`, and both update.
+- `.storybook/main.ts` registers the addons; `.storybook/preview.tsx` imports `globals.css` and provides the theme decorator; `vitest.config.ts` wires the browser test runner.
+
+> Requires the Playwright chromium browser once: `pnpm exec playwright install chromium`.
+
+---
+
 ## The design-skill kit
 
 `.claude/skills/` contains **18 skills** that Claude Code auto-discovers, plus a shared resource layer.
@@ -275,6 +318,11 @@ Per-component pages are statically generated (`generateStaticParams`) with per-p
 | `pnpm lint` | Run ESLint (`eslint-config-next`) |
 | `pnpm sync:tokens` | Regenerate `src/app/globals.css` from `design/variables-export.json` |
 | `pnpm sync:tokens:check` | Verify the token count (1,806) without writing — CI guard |
+| `pnpm storybook` | Start the Storybook workbench at http://localhost:6006 |
+| `pnpm build-storybook` | Build the static Storybook site into `storybook-static/` |
+| `pnpm test-storybook` | Run every story as a browser component test (Vitest + Playwright) |
+| `pnpm test-storybook:watch` | Run the story component tests in watch mode |
+| `pnpm gen:stories` | Regenerate the showcase stories from `components/docs/registry.tsx` |
 
 ---
 
@@ -286,8 +334,10 @@ Per-component pages are statically generated (`generateStaticParams`) with per-p
 | `next.config.ts` | Next.js config (defaults) |
 | `tsconfig.json` | TypeScript config + path aliases (`@/components`, `@/lib`, `@/hooks`) |
 | `eslint.config.mjs` | ESLint flat config extending `eslint-config-next` |
-| `postcss.config.mjs` | PostCSS with `@tailwindcss/postcss` |
-| `pnpm-workspace.yaml` | pnpm settings (`allowBuilds` disabled for `sharp`, `unrs-resolver`) |
+| `postcss.config.mjs` | PostCSS with `@tailwindcss/postcss` (also used by Storybook's Vite builder) |
+| `.storybook/` | Storybook config — `main.ts` (framework + addons), `preview.tsx` (globals.css + theme decorator) |
+| `vitest.config.ts` | Vitest browser-mode runner for the story component tests (`@storybook/addon-vitest`) |
+| `pnpm-workspace.yaml` | pnpm settings — `allowBuilds`: `esbuild: true` (needed by Storybook/Vite), `sharp` and `unrs-resolver` off |
 | `.npmrc` | `verify-deps-before-run=false` |
 
 Path aliases (from `components.json` / `tsconfig.json`):
