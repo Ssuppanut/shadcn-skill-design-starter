@@ -845,7 +845,7 @@ import { Checkbox } from "@/components/ui/checkbox"
     install: "pnpm dlx shadcn@latest add progress",
     usage: `import { Progress } from "@/components/ui/progress"
 
-<Progress value={66} />`,
+<Progress value={66} aria-label="Upload progress" />`,
     Demo: ProgressDemo,
   },
   {

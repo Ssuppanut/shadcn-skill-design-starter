@@ -1302,9 +1302,9 @@ export function PopoverDemo() {
 export function ProgressDemo() {
   return (
     <div className="grid w-full max-w-sm gap-3">
-      <Progress value={33} />
-      <Progress value={66} />
-      <Progress value={100} />
+      <Progress value={33} aria-label="Storage used" />
+      <Progress value={66} aria-label="Upload progress" />
+      <Progress value={100} aria-label="Profile completion" />
     </div>
   );
 }
