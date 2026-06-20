@@ -566,7 +566,7 @@ export function AspectRatioDemo() {
         ratio={16 / 9}
         className="flex items-center justify-center rounded-lg border bg-muted"
       >
-        <span className="text-sm font-medium text-muted-foreground">16 / 9</span>
+        <span className="text-sm font-medium text-foreground">16 / 9</span>
       </AspectRatio>
     </div>
   );
