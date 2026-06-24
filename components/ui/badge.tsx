@@ -3,10 +3,13 @@ import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
-// Matches the Figma source of truth (node 73:3479): rounded-lg corners and
-// font-medium (was rounded-full / font-semibold from an older shadcn snippet).
+// Matches the Figma source of truth (node 73:3479): font-medium + 8px corners.
+// Figma's radius scale is offset one step from this theme's: Figma `rounded-lg`
+// = 8px, which here is `rounded-md` (calc(--radius 10px - 2px)); our `rounded-lg`
+// would be 10px. So use rounded-md to hit the Figma pixel value.
+// (Was rounded-full / font-semibold from an older shadcn snippet.)
 const badgeVariants = cva(
-  "inline-flex items-center rounded-lg border px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+  "inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
   {
     variants: {
       variant: {
