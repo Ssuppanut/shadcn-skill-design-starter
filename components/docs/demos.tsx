@@ -611,7 +611,8 @@ export function CalendarDemo() {
       mode="single"
       selected={date}
       onSelect={setDate}
-      className="rounded-md border shadow-sm"
+      captionLayout="dropdown"
+      className="rounded-lg border shadow-sm"
     />
   );
 }
